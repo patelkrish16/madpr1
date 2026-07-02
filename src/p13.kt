@@ -5,7 +5,7 @@ fun main() {
     println(a1)
 
     println("Student Enrollment Number:")
-    val s2 = readln().toInt()
+    val s2 = readln().toLong()
     println("Enrollment No: $s2")
 
     println("Student Name:")
