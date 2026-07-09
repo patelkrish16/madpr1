@@ -42,4 +42,31 @@ fun main()
     println("Entered Array:")
     println(ar1.joinToString(",","[","]"))
 
+
+    println("**************With Built-in Function***************")
+    val builtIn = ar1.copyOf()
+    builtIn.sort()
+
+    println("After sorting by built-in function:")
+    println(builtIn.joinToString(", "))
+
+    println("\n**************Without Built-in Function***************")
+    val manual = ar1.copyOf()
+
+    println("Before Sorting:")
+    println(manual.joinToString(", "))
+
+
+    for (i in 0 until manual.size - 1) {
+        for (j in 0 until manual.size - i - 1) {
+            if (manual[j] > manual[j + 1]) {
+                val temp = manual[j]
+                manual[j] = manual[j + 1]
+                manual[j + 1] = temp
+            }
+        }
+    }
+
+    println("\nAfter Sorting without built-in function:")
+    println(manual.joinToString(", "))
 }
