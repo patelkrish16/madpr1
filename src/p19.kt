@@ -12,7 +12,7 @@ fun main() {
     println("\nEntered Array:")
     println(arr.joinToString(", ", "[", "]"))
 
-    // Find Maximum Element
+
     var max = arr[0]
 
     for (i in 1 until arr.size) {
