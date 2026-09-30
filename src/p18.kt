@@ -12,7 +12,6 @@ fun main()
     println("Three-D Array")
     val threeDArray = Array(3) { Array(3) { Array<Int>(3) { 0 } } }
     println(threeDArray.contentDeepToString())
-
     println("Create Array-1 by using arrayOf")
     val ar1=arrayOf(10,20,40,50)
     println(ar1.joinToString())
@@ -41,22 +40,15 @@ fun main()
     }
     println("Entered Array:")
     println(ar1.joinToString(",","[","]"))
-
-
     println("**************With Built-in Function***************")
     val builtIn = ar1.copyOf()
     builtIn.sort()
-
     println("After sorting by built-in function:")
     println(builtIn.joinToString(", "))
-
     println("\n**************Without Built-in Function***************")
     val manual = ar1.copyOf()
-
     println("Before Sorting:")
     println(manual.joinToString(", "))
-
-
     for (i in 0 until manual.size - 1) {
         for (j in 0 until manual.size - i - 1) {
             if (manual[j] > manual[j + 1]) {
@@ -66,7 +58,6 @@ fun main()
             }
         }
     }
-
     println("\nAfter Sorting without built-in function:")
     println(manual.joinToString(", "))
 }

@@ -39,7 +39,7 @@ class Student(
 fun main() {
 
     val students = listOf(
-        Student("Raju", "Sah", 21, "24012011221", "Computer Engineering", "H", "1"),
+        Student("krish", "patel", 21, "25172012057", "Computer Engineering", "H", "1"),
         Student("Bob", "Johnson", 21, "EN002", "Electrical Engineering", "B", "2"),
         Student("Charlie", "Brown", 19, "EN003", "Mechanical Engineering", "B", "1"),
         Student("David", "Lee", 22, "EN004", "Civil Engineering", "A", "3"),
